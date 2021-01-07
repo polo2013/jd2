@@ -21,7 +21,7 @@ if __name__ == '__main__':
     """
     print(a)
 
-    os.system('sh dockerfile\setCurDate.sh')
+    os.system(r"sh dockerfile\setCurDate.sh")
     print('\n')
 
     jd_seckill = JdSeckill()
