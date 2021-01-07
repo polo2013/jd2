@@ -1,4 +1,5 @@
 import sys
+import os
 from jd_seckill.jd_spider_requests import JdSeckill
 
 
@@ -19,6 +20,9 @@ if __name__ == '__main__':
  2.秒杀抢购商品
     """
     print(a)
+
+    os.system('sh dockerfile\setCurDate.sh')
+    print('\n')
 
     jd_seckill = JdSeckill()
     choice_function = input('请选择:')
