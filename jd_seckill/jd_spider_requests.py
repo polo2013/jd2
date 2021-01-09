@@ -455,7 +455,7 @@ class JdSeckill(object):
                 logger.info('抢购发生异常，稍后继续执行！', e)
             wait_some_time()
             now = datetime.datetime.now()
-            if now.hour == 10 and now.minute == 6:
+            if now.hour >= 10 and now.minute >= 6:
                 break
 
     def make_reserve(self):
