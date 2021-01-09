@@ -28,6 +28,7 @@ from .util import (
     email
 
 )
+import datetime
 
 
 class SpiderSession:
@@ -453,6 +454,9 @@ class JdSeckill(object):
             except Exception as e:
                 logger.info('抢购发生异常，稍后继续执行！', e)
             wait_some_time()
+            now = datetime.datetime.now()
+            if now.hour == 10 and now.minute == 6:
+                break
 
     def make_reserve(self):
         """商品预约"""

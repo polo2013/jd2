@@ -21,8 +21,8 @@ if __name__ == '__main__':
     """
     print(a)
 
-    os.system(r"sh setCurDate.sh")
-    print('\n')
+    # os.system(r"sh setCurDateConfig.sh")
+    # print('\n')
 
     jd_seckill = JdSeckill()
     choice_function = input('请选择:')
